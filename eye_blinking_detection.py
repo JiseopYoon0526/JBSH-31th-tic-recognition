@@ -12,6 +12,8 @@ y_train = np.load('y_train.npy').astype(np.float32)
 x_val = np.load('x_val.npy').astype(np.float32)
 y_val = np.load('y_val.npy').astype(np.float32)
 
+# 신경망 
+
 model = Sequential()
 model.add(keras.layers.Conv2D(32, (3,3), activation='relu', input_shape=(28, 28,1)))
 model.add(keras.layers.MaxPooling2D((2,2)))
